@@ -1,0 +1,15 @@
+
+  <h3>My first cakes component created works! First Cake prepared is {{cakeObject.cakeName | uppercase }} </h3>
+
+
+
+<div style="color:blueviolet; background-color:yellow">
+  <H2>LIST OF ALL AVIALABLE CAKES</H2>
+  <ul>
+    <li *ngFor="let cake of cakeConst"  (click)="onSelect(cake)">
+      <span class="badge">{{cake.cakeName}}</span>
+    </li>
+  </ul>
+</div>
+
+<app-cake-detail [selectedCake]="selectedCake"></app-cake-detail>

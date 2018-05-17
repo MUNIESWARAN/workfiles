@@ -1,0 +1,17 @@
+CREATE TABLE Registration (employeeId INT  PRIMARY KEY, firstName varchar(255), lastName varchar(255), gender varchar(255), dateOfBirth varchar(255), commAddress varchar(255), emailid varchar(255), password varchar(255), contact varchar(255), userType varchar(255), status varchar(255) );
+
+
+Employees
+	employeeId
+	firstName
+	lastName
+	gender
+	dateOfBirth
+	dateOfjoining
+	employeeaddress
+	managerid
+	emailid
+	password
+	phonenum
+	type
+	status

@@ -1,0 +1,16 @@
+<p>
+  cake-detail is a works! gets data from Master
+</p>
+<table border="1">
+<h2>{{selectedCake.cakeName | uppercase }} Details:</h2>
+  <div style="background: yellowgreen; color:black" *ngIf="selectedCake">
+    <div><span>CAKE DESCRIPTION : </span>{{selectedCake.cakeDesc}}</div><br/>
+    <div><span>CAKE PRICE: </span>{{selectedCake.cakePrice}}</div><br/>
+
+  <label>Want to update   
+     <input [(ngModel)]="selectedCake.cakeName" placeholder="cakename">
+   </label>
+   
+</div>
+
+</table>
