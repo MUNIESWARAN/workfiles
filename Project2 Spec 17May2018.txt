@@ -1,0 +1,6 @@
+Project 2 Specification
+Employee & Skill tables
+Insert delete update the above
+Search Skill set
+Html form validation
+
