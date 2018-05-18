@@ -9,7 +9,9 @@ import { DeleteEmployeeComponent } from './delete-employee/delete-employee.compo
 import { GetEmployeeComponent } from './get-employee/get-employee.component';
 import { GetEmployeesComponent } from './get-employees/get-employees.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-
+import { LogService } from './log.service';
+import { LogCompComponent } from './log-comp/log-comp.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,12 +19,13 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     EditEmployeeComponent,
     DeleteEmployeeComponent,
     GetEmployeeComponent,
-    GetEmployeesComponent
+    GetEmployeesComponent,
+    LogCompComponent
   ],
   imports: [
     BrowserModule, FormsModule,AppRoutingModule
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LogService} from '../log.service';
 
 @Component({
   selector: 'app-add-employee',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddEmployeeComponent implements OnInit {
 
-  constructor() { }
+  start = new Date;
+  constructor(private logService : LogService) { 
+      this.log(this.start.toUTCString());
+  }
 
   ngOnInit() {
+  }
+
+  private log(message:string){
+    this.logService.add('ADD EMPLOYEE Component '+ message);
   }
 
 }
