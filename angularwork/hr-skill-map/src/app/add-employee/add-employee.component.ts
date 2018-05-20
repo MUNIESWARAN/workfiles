@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {LogService} from '../log.service';
+import {Router} from '@angular/router';
+import {Employee} from '../Employee';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-add-employee',
@@ -8,16 +11,21 @@ import {LogService} from '../log.service';
 })
 export class AddEmployeeComponent implements OnInit {
 
-  start = new Date;
-  constructor(private logService : LogService) { 
-      this.log(this.start.toUTCString());
+  employee:Employee = new Employee();
+  editEmployeeFlag = false;
+  constructor(private router:Router, private employeeService: EmployeeService) { 
+     
   }
+
+
+
+  addEmployee():void{
+    this.employeeService.addEmployee(this.employee).subscribe(data=>{alert("Employee Registered Successfully"); });
+  }
+
 
   ngOnInit() {
   }
 
-  private log(message:string){
-    this.logService.add('ADD EMPLOYEE Component '+ message);
-  }
 
 }

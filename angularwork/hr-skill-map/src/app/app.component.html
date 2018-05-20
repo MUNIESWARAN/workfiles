@@ -1,16 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
   <h1>
     Welcome to {{ title }}!!! 
   </h1>
   <h4>{{author}}</h4>
 
-  <a routerLink="/ADDEMPLOYEE">C1</a> | 
-  <a routerLink="/DELETEEMPLOYEE">C2</a> | 
-  <a routerLink="/EDITEMPLOYEE">C3</a> | 
-  <a routerLink="/GETEMPLOYEE">C4</a> |
-  <a routerLink="/LISTALLEMPLOYEES">C5</a>
+  <a routerLink="/LISTALLEMPLOYEES">List All Available Employees</a> | 
+  <a routerLink="/ADDEMPLOYEE">Add Employee</a> | 
+  <a routerLink="/ADDSKILLS">Add Skills</a> | 
+  <a routerLink="/EDITEMPLOYEE"></a>  
+  <a routerLink="/GETEMPLOYEE"></a> 
+  
     
     
   <router-outlet></router-outlet>
-  <app-log-comp></app-log-comp>
+  
+  

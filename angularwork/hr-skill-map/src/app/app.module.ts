@@ -11,6 +11,9 @@ import { GetEmployeesComponent } from './get-employees/get-employees.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LogService } from './log.service';
 import { LogCompComponent } from './log-comp/log-comp.component';
+import { HttpClientModule }    from '@angular/common/http';
+import { UpdateDetailComponent } from './update-detail/update-detail.component';
+import { AddskillComponent } from './addskill/addskill.component';
  
 @NgModule({
   declarations: [
@@ -20,10 +23,12 @@ import { LogCompComponent } from './log-comp/log-comp.component';
     DeleteEmployeeComponent,
     GetEmployeeComponent,
     GetEmployeesComponent,
-    LogCompComponent
+    LogCompComponent,
+    UpdateDetailComponent,
+    AddskillComponent
   ],
   imports: [
-    BrowserModule, FormsModule,AppRoutingModule
+    BrowserModule, FormsModule,AppRoutingModule, HttpClientModule
   ],
   providers: [LogService],
   bootstrap: [AppComponent]
